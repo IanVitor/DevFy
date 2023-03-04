@@ -1,10 +1,9 @@
 <h1 align="center">
-    <img alt="DevFy Banner" title="Devfy" src="assets/images/DevFy_banner.png" width="300px" />
+    <a src="https://ianvitor.github.io/DevFy/"><img alt="DevFy Banner" title="Devfy" src="assets/images/DevFy_banner.png" width="300px" /></a>
 </h1>
 
 <div align="center">
     <h3> 🟣 Escute as melhores músicas em qualquer lugar! 🟣 </h3>
-    !\[my badge\](https://badgen.net/badge/hello/world/red?icon=twitter)
 </div>
 
 ## DevFy - music player
