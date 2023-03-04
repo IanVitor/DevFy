@@ -18,7 +18,7 @@
 Projeto pessoal com o intuito de elaborar um player de música responsivo.
 
 <div align="center" >
-  imagem do projeto
+  <img alt="DevFy" title="Devfy" src="assets/images/layout.png"/>
 </div>
 
 ## 🛠️ Tecnologias
