@@ -1,46 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style/style.css">
-  <link
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="assets/images/DevFy.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="style/style.css" />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
       integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-  <title>DevFy</title>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+    />
 
-  <main class="player-container">
+    <title>DevFy</title>
+  </head>
+  <body>
+    <main class="player-container">
+      <audio id="audio"></audio>
 
-    <audio id="audio"></audio>
+      <div class="img-container">
+        <img id="audio-img" width="300px" height="300px" />
+      </div>
 
-    <div class="img-container">
-      <img id="img" width="300px" src="https://images.squarespace-cdn.com/content/v1/5183c2cde4b0580e000616c0/1476978099434-05AT75B2T3EX0V21UASW/image-asset.jpeg" alt="Music image">
-    </div>
+      <div class="info-container">
+        <h2 id="music-title"><span></span></h2>
+        <p id="author-name"><span></span></p>
+      </div>
 
-    <div class="info-container">
-      <h2 id="music-name">Fly me to the moon</h2>
-      <p id="artist-name">Frank Sinatra</p>
-    </div>
+      <div class="bar-progres">
+        <div class="current-progres"></div>
+      </div>
 
-    <div class="bar-progres">
-      <div class="current-progres"></div>
-    </div>
+      <div class="audio-time-container">
+        <p id="audio-current"><span>2:40</span></p>
+        <p id="audio-duration"><span>2:40</span></p>
+      </div>
 
-    <div class="controls-container">
-      <button onclick="previousSong()" class="button" id="left-button"><i class="fa-solid fa-angle-double-left"></i></button>
-      <button onclick="tocar()" class="button" id="play-button"><i class="fa-solid fa-play"></i></button>
-      <button onclick="nextSong()" class="button" id="right-button"><i class="fa-solid fa-angle-double-right"></i></button>
-    </div>
+      <div class="controls-container">
+        <button onclick="previousSong()" class="button" id="left-button">
+          <i class="fa-solid fa-angle-double-left"></i>
+        </button>
+        <button onclick="tocar()" class="button" id="play-button">
+          <i class="fa-solid fa-play"></i>
+        </button>
+        <button onclick="nextSong()" class="button" id="right-button">
+          <i class="fa-solid fa-angle-double-right"></i>
+        </button>
+      </div>
+    </main>
 
-  </main>
-  
-  <script src="scripts/script.js"></script>
-</body>
+    <script src="scripts/script.js"></script>
+  </body>
 </html>

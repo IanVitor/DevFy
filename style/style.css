@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body{
@@ -24,13 +25,13 @@ body{
   justify-content: center;
 }
 
-#img{
+#audio-img{
   margin: 20px 0;
   border-radius: 5px;
 }
 
 .info-container{
-  padding: 0 50px;
+  padding: 10px 50px;
 }
 
 #music-name{
@@ -43,7 +44,7 @@ body{
 }
 
 .bar-progres{
-  margin: 0 auto 10px;
+  margin: 10px auto 10px;
   height: 5px;
   width: 300px;
   background-color: white;
@@ -59,11 +60,19 @@ body{
   border-radius: inherit;
 }
 
+.audio-time-container{
+  display: flex;
+  width: 100%;
+  gap: 150px;
+  justify-content: space-around;
+  font-size: 15px;
+}
+
 .controls-container{
   width: 50%;
   margin:auto;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .button{
