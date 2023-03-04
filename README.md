@@ -1,5 +1,3 @@
-# DevFy
- Music player
 <h1 align="center">
     <img alt="DevFy Banner" title="Devfy" src="assets/images/DevFy_banner.png" width="300px" />
 </h1>
@@ -22,14 +20,11 @@ Projeto pessoal com o intuito de elaborar um player de música responsivo.
 </div>
 
 ## 🛠️ Tecnologias
-
-💻 HTML
-
-💻 CSS
-
-💻 JavaScript
-
-
+<ul>
+ <dd><img width=20px height=20px src='https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_html_icon_130541.png'> HTML5</dd>
+ <dd><img width=20px height=20px src='https://icones.pro/wp-content/uploads/2022/08/css3.png'> CSS3</dd>
+ <dd><img width=20px height=20px src='https://pcodinomebzero.neocities.org/Imagens/javascript1.png'> JavaScript</dd>
+</ul> 
 ## :camera: Veja:
 
 ### 🖥️ Desktop
