@@ -17,6 +17,9 @@
 <body>
 
   <main class="player-container">
+
+    <audio id="audio"></audio>
+
     <div class="img-container">
       <img id="img" width="300px" src="https://images.squarespace-cdn.com/content/v1/5183c2cde4b0580e000616c0/1476978099434-05AT75B2T3EX0V21UASW/image-asset.jpeg" alt="Music image">
     </div>
@@ -31,9 +34,9 @@
     </div>
 
     <div class="controls-container">
-      <button class="button" id="left-button"><i class="fa-solid fa-angle-double-left"></i></button>
-      <button class="button" id="play-button"><i class="fa-solid fa-play"></i></button>
-      <button class="button" id="right-button"><i class="fa-solid fa-angle-double-right"></i></button>
+      <button onclick="previousSong()" class="button" id="left-button"><i class="fa-solid fa-angle-double-left"></i></button>
+      <button onclick="tocar()" class="button" id="play-button"><i class="fa-solid fa-play"></i></button>
+      <button onclick="nextSong()" class="button" id="right-button"><i class="fa-solid fa-angle-double-right"></i></button>
     </div>
 
   </main>
