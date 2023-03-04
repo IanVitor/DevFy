@@ -4,11 +4,7 @@
 
 <div align="center">
     <h3> 🟣 Escute as melhores músicas em qualquer lugar! 🟣 </h3>
-    <a href="https://github.com/PedroCantanhede" target="_blank">
-      <img src="https://img.shields.io/static/v1?label=Author&message=PedroCantanhede&color=aa52f7&style=for-the-badge" target="_blank" alt="Pedro Cantanhêde">
-    </a>
-    <img src="https://img.shields.io/github/repo-size/PedroCantanhede/tic-tac-toe?color=aa52f7&style=for-the-badge" alt="Repositório"> 
-    <img src="https://img.shields.io/github/languages/count/PedroCantanhede/tic-tac-toe?color=aa52f7&style=for-the-badge" alt="Linguagens">
+    !\[my badge\](https://badgen.net/badge/hello/world/red?icon=twitter)
 </div>
 
 ## DevFy - music player
