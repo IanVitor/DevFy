@@ -1,0 +1,89 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #262627;
+}
+
+.player-container{
+  background-color: #2d2d2e;
+  color: white;
+  max-width: 400px;
+  min-height: 300px;
+  margin: 50px auto;
+  border-radius: 10px;
+}
+
+.img-container{
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#img{
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+.info-container{
+  padding: 0 50px;
+}
+
+#music-name{
+  margin-bottom: 5px;
+}
+
+#artist-name{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.bar-progres{
+  margin: 0 auto 10px;
+  height: 5px;
+  width: 300px;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.current-progres{
+  --progress: 85%;
+  height: inherit;
+  background-color: red;
+  width: var(--progress);
+  border-radius: inherit;
+}
+
+.controls-container{
+  width: 50%;
+  margin:auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.button{
+  border: none;
+  height: 30px;
+  width: 30px;
+  background-color: #2d2d2e;
+  color: red;
+  margin: 10px 0 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+#play-button{
+  background-color: red;
+  border-radius: 50%;
+  color: white;
+}
+
+.button:hover{
+  transform: scale(1.1);
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    audio{
+      background-color: black;
+      border: 3px solid red;
+      padding-left: 30px;
+    }
+    .bar-progres{
+      height: 5px;
+      width: 100%;
+      background-color: aqua;
+      cursor: pointer;
+    }
+    .current-progres{
+      --progress: 45%;
+      height: inherit;
+      background-color: brown;
+      width: var(--progress);
+    }
+  </style>
+</head>
+<body>
+  <audio  id="audio"></audio>
+
+  <button src="" onclick="tocar()">Tocar</button>
+  <button onclick="pausar()">Pausar</button>
+  <button onclick="proxima()">Proxima</button>
+
+  <div class="bar-progres">
+    <div class="current-progres"></div>
+  </div>
+
+  <img width="200px" src="https://images.squarespace-cdn.com/content/v1/5183c2cde4b0580e000616c0/1476978099434-05AT75B2T3EX0V21UASW/image-asset.jpeg" alt="">
+
+  <script>
+    const audio = document.querySelector("#audio")
+    const progressContainer = document.querySelector(".bar-progres")
+    const currentProgress = document.querySelector(".current-progres")
+
+
+    const audiotag = ['src/audio.mp3',
+                      'src/audio2.mp3']
+
+    var i = 0
+    const slideLength = audiotag.length
+
+    
+
+    function tocar () {
+      audio.play()
+    }
+    function pausar () {
+      audio.pause()
+    }
+
+    function updateBar(){
+      const barWidth = audio.currentTime/108*100
+      currentProgress.style.setProperty('--progress', `${barWidth}%`)
+
+    }
+
+    function proxima () {
+      audio.src = audiotag[i]
+      if(i < slideLength-1){
+        i++
+      }else{
+        i = 0;
+      }
+      tocar()
+      
+    }
+    
+    progressContainer.addEventListener('click', JumpTo);
+    audio.addEventListener('timeupdate', updateBar);
+
+    
+    function JumpTo (event){
+      const width = progressContainer.clientWidth;
+      const clickPosition = event.offsetX;
+      const jumpToTime = (clickPosition/width)* 108;
+      audio.currentTime = jumpToTime;
+    }
+
+  </script>
+</body>
+</html>
