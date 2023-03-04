@@ -1,12 +1,12 @@
 <h1 align="center">
-    <img alt="DevFy Banner" title="Devfy" src="assets/images/DevFy_banner.png" width="300px" />
+    <a href="https://ianvitor.github.io/DevFy/"><img alt="DevFy Banner" title="Devfy" src="assets/images/DevFy_banner.png" width="300px" /></a>
 </h1>
 
 <div align="center">
     <h3> 🟣 Escute as melhores músicas em qualquer lugar! 🟣 </h3>
 </div>
 
-## <a src="https://ianvitor.github.io/DevFy/">DevFy</a> - music player
+## DevFy - music player
 
 Projeto pessoal com o intuito de elaborar um player de música responsivo.
 
