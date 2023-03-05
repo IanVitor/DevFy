@@ -20,8 +20,7 @@ Projeto pessoal com o intuito de elaborar um player de música responsivo.
  <dd><img width=20px height=20px src='https://icones.pro/wp-content/uploads/2022/08/css3.png'> CSS3</dd>
  <dd><img width=20px height=20px src='https://pcodinomebzero.neocities.org/Imagens/javascript1.png'> JavaScript</dd>
 </ul> 
-## :camera: Veja:
 
 ### 🖥️ Desktop
 
-gif do projeto
+<img alt="DevFy" src="assets/images/DevFy_gif.gif" />
